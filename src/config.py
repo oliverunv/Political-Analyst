@@ -1,12 +1,8 @@
-import os, datetime
-from dotenv import load_dotenv
-load_dotenv()
-
+import os
 from datetime import datetime, timedelta, timezone
 
 LOCAL_TZ_OFFSET = -4  # adjust to your actual offset if needed
 local_today = (datetime.now(timezone.utc) + timedelta(hours=LOCAL_TZ_OFFSET)).date()
-
 TODAY = local_today.isoformat()
 
 GNEWS_API_KEY = os.getenv("GNEWS_API_KEY")

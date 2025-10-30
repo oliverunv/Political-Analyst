@@ -1,6 +1,6 @@
 import os, json, datetime, time, requests
 from openai import OpenAI
-from .config import GNEWS_API_KEY, OPENAI_API_KEY, QUERY, LANGS, TODAY
+from src.config import GNEWS_API_KEY, OPENAI_API_KEY, QUERY, LANGS, TODAY
 from datetime import datetime, timedelta, timezone
 
 client = OpenAI(api_key=OPENAI_API_KEY)

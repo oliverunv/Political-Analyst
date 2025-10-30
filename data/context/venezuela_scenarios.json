@@ -1,0 +1,29 @@
+[
+  {
+    "id": "VEN-01",
+    "title": "Prolonged Coercive Standoff",
+    "narrative": "The United States sustains military and economic pressure on Venezuela through naval deployments, limited strikes, and sanctions, while avoiding direct intervention. Maduro’s regime tightens control, using nationalism and repression to maintain loyalty within the armed forces and bureaucracy. The opposition remains divided and largely exiled, unable to convert international recognition into internal influence. Regional governments criticize Washington’s actions but steer clear of involvement, while allies such as Russia, China, and Iran help Caracas absorb external shocks. The confrontation settles into a tense equilibrium: Washington maintains coercive leverage for domestic and strategic signaling, while Venezuela endures deepening authoritarianism, economic stagnation, and continued isolation.",
+    "assumptions": [],
+    "confidence": 0.33,
+    "last_update": "2025-10-29",
+    "notes": ""
+  },
+  {
+    "id": "VEN-02",
+    "title": "Strategic Accommodation",
+    "narrative": "After months of stalemate, the United States shifts from maximum pressure to pragmatic engagement. Washington prioritizes energy access, migration management, and regional stability over democratic reform. Negotiations yield selective concessions—limited openings for business and opposition activity—while Maduro’s core power structures remain intact. Both sides benefit: the U.S. gains influence and economic opportunity, and the regime secures resources, time, and implicit legitimacy. The outcome is a managed coexistence marked by transactional cooperation, muted rhetoric, and sustained authoritarian stability framed as normalization.",
+    "assumptions": [],
+    "confidence": 0.33,
+    "last_update": "2025-10-29",
+    "notes": ""
+  },
+  {
+    "id": "VEN-03",
+    "title": "U.S. Escalation Toward Regime Change",
+    "narrative": "Washington abandons restraint and escalates toward a deliberate regime-change effort. Expanded air and covert operations target key regime assets, applying direct pressure on the armed forces and chavista elite. The campaign aims to force Maduro’s exit or trigger an internal power transfer favoring a U.S.-aligned transitional authority, possibly with María Corina Machado in a central role. Initial uncertainty grips Caracas as factions weigh loyalty versus survival. If regime cohesion cracks, a negotiated or externally backed transition could follow; if not, repression intensifies and confrontation deepens. The immediate aftermath of escalation is thus a volatile period defined by elite bargaining, competing legitimacy claims, and heavy international involvement.",
+    "assumptions": [],
+    "confidence": 0.33,
+    "last_update": "2025-10-29",
+    "notes": ""
+  }
+]

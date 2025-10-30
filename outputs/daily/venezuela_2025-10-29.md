@@ -1,0 +1,9 @@
+In recent developments concerning Venezuela, it has been confirmed that during the final year of President Donald Trump’s first administration, the CIA executed a covert cyberattack against the Venezuelan government. This operation targeted and disabled the computer network of Venezuelan leader Nicolás Maduro’s intelligence service. Additionally, the Trump administration has authorized the CIA to conduct further covert actions within Venezuela, including potentially lethal operations, as part of its strategy to push for regime change. In response to these actions, Russia has emphasized the importance of adhering to international law in dealing with the situation in Venezuela, particularly in light of the significant deployment of U.S. naval forces in the Caribbean near Venezuela’s coast. Meanwhile, María Corina Machado, a Venezuelan opposition leader, expressed optimism about a new era of justice and freedom for Venezuela and Bolivia, following support from Bolivia’s president-elect, Rodrigo Paz, who has openly criticized Maduro and pledged Bolivia's support for democracy and freedom.
+
+**Key Developments Today:**
+
+- The CIA conducted a cyberattack against Nicolás Maduro’s intelligence network in Venezuela during Trump’s first term.
+- The Trump administration has authorized the CIA for further covert actions in Venezuela, including possible lethal operations.
+- Russia calls for adherence to international law amid U.S. military presence near Venezuela.
+- Venezuelan opposition leader María Corina Machado speaks of a new era of justice and freedom.
+- Bolivia’s president-elect, Rodrigo Paz, criticizes Maduro and supports democracy in Venezuela.

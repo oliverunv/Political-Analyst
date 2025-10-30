@@ -1,12 +1,12 @@
 [
   {
-    "id": "a56eac7cadbff53dc0012c50abcccb4e",
-    "title": "Maduro pide quitar nacionalidad a quien \"se sume\" a una invasión extranjera en Venezuela",
+    "id": "bf96f0322ec814f80ff03cbc640eb6a0",
+    "title": "Ministro del Interior de Venezuela apoya a Maduro en quitar la nacionalidad a quien \"se sume\" a una invasión extranjera",
     "description": "Caracas, 29 oct (EFE).- El presidente de Venezuela, Nicolás Maduro, informó este miércoles que ha so...",
-    "content": "Caracas, 29 oct (EFE).- El presidente de Venezuela, Nicolás Maduro, informó este miércoles que ha solicitado al Tribunal Supremo de Justicia (TSJ) una \"consideración constitucional\" para quitar la nacionalidad a todo \"vendepatria\" que \"se sume a un e... [284 chars]",
-    "url": "https://www.abc.es/internacional/maduro-pide-quitar-nacionalidad-sume-invasion-extranjera-20251030020033-vi.html",
-    "image": "https://s1.abcstatics.com/abc/www/multimedia/internacional/2025/10/30/VIDEO-maduro-pide-quitar-nacionalidad.jpg",
-    "publishedAt": "2025-10-30T01:00:36Z",
+    "content": "Caracas, 29 oct (EFE).- El presidente de Venezuela, Nicolás Maduro, informó este miércoles que ha solicitado al Tribunal Supremo de Justicia (TSJ) una \"consideración constitucional\" para quitar la nacionalidad a todo \"vendepatria\" que \"se sume a un e... [293 chars]",
+    "url": "https://www.abc.es/internacional/ministro-interior-venezuela-apoya-maduro-quitar-nacionalidad-20251030041820-vi.html",
+    "image": "https://s1.abcstatics.com/abc/www/multimedia/internacional/2025/10/30/VIDEO-ministro-interior-venezuela-apoya.jpg",
+    "publishedAt": "2025-10-30T03:18:24Z",
     "lang": "es",
     "source": {
       "id": "344e8b5ed6eb7f47c541fa8490bdd07b",
@@ -15,6 +15,23 @@
       "country": "es"
     },
     "_score": 8
+  },
+  {
+    "id": "e662b32e97c63214afe893f03c4f391f",
+    "title": "Did US try to capture Venezuela’s Maduro by bribing pilot of his plane?",
+    "description": "The United States reportedly tried to buy off the personal pilot of Venezuelan President Nicolas Maduro in a bid to arrest him. The pilot, in return, was told that he would be made a wealthy man. A US federal agent kept interacting with Maduro's chief pilot even after he retired. Here's what we know about the alleged plan hatched by the US to arrest the strongman and why it failed",
+    "content": "The federal agent had a daring pitch for Nicolas Maduro’s chief pilot: All he had to do was surreptitiously divert the Venezuelan president’s plane to a place where US authorities could nab the strongman.\nIn exchange, the agent told the pilot in a cl... [12419 chars]",
+    "url": "https://www.firstpost.com/explainers/did-us-try-to-capture-venezuelas-maduro-by-bribing-pilot-of-his-plane-13946302.html",
+    "image": "https://images.firstpost.com/uploads/2025/10/Wire-1-67-2025-10-e29d5c94ce1647c5202ddc19e979290a.jpg?im=FitAndFill=(1200,675)",
+    "publishedAt": "2025-10-30T04:52:35Z",
+    "lang": "en",
+    "source": {
+      "id": "a7ae5ecb2b2c41a3addf1d2e51ceb032",
+      "name": "Firstpost",
+      "url": "https://www.firstpost.com",
+      "country": "in"
+    },
+    "_score": 7
   },
   {
     "id": "d4c02a996732d3d414324331e6949146",
@@ -68,106 +85,21 @@
     "_score": 6
   },
   {
-    "id": "c7ea4ad4acf94a745b57b9bdb3793052",
-    "title": "\"Los mercenarios capturados han declarado todo\": Maduro sobre la derrota del \"plan macabro de la CIA\"",
-    "description": "El mandatario venezolano manifestó que Washington \"siembra la cizaña, la intriga, el odio y la xenofobia\" para enfrentar a los pueblos hermanos de Venezuela y Trinidad y Tobago.",
-    "content": "Nicolás Maduro aseguró este miércoles que las fuerzas de inteligencia y contrainteligencia de Venezuela lograron desarticular un \"plan macabro\" de la Agencia Central de Inteligencia de EE.UU. que, según denuncia Caracas, consistió en preparar una ope... [3455 chars]",
-    "url": "https://actualidad.rt.com/actualidad/570988-mercenarios-capturados-declarado-maduro-plan-cia",
-    "image": "https://mf.b37mrtl.ru/actualidad/public_images/2025.10/article/6902a9d0e9ff712f4e36c159.jpg",
-    "publishedAt": "2025-10-30T00:04:26Z",
-    "lang": "es",
+    "id": "322e4374aa993498dd5dadd4ad39a7a1",
+    "title": "Donald Trump's campaign against Venezuelan drug boats is rooted in past failure and a hatred of Nicolas Maduro",
+    "description": "Donald Trump is on a revenge tour during his second stint in the White House and now his gaze has shifted to an enemy who once \"humiliated\" him — Nicolas Maduro.",
+    "content": "As the United States blows up alleged drug boats in international waters near South America, ordinary Venezuelans are arming themselves and joining the military.\nThey are doing it as the Trump administration increased the bounty for Venezuelan Presid... [7716 chars]",
+    "url": "https://www.abc.net.au/news/2025-10-30/trump-blowing-up-boats-as-maduro-arms-venezuelans/105947824",
+    "image": "https://live-production.wcms.abc-cdn.net.au/e3d30bc1d34d054acaadcefab52b3b48?impolicy=wcms_watermark_news&cropH=2813&cropW=5000&xPos=0&yPos=261&width=862&height=485&imformat=generic",
+    "publishedAt": "2025-10-30T06:46:41Z",
+    "lang": "en",
     "source": {
-      "id": "1baeb38ce5ffe5e002811db1d2267536",
-      "name": "RT en Español",
-      "url": "https://actualidad.rt.com",
-      "country": "pe"
+      "id": "7b4f42ae3a5b2e91e272ab26ccca6128",
+      "name": "ABC (Australian Broadcasting Corporation)",
+      "url": "https://www.abc.net.au",
+      "country": "au"
     },
     "_score": 5
-  },
-  {
-    "id": "32fd6fa037680f496df08c9dd509dbd7",
-    "title": "¡Buenas noticias! Qué bonos cobrar en Venezuela y cómo vía Sistema Patria",
-    "description": "Sistema Patria da esta buena noticia para los beneficiarios de estos bonos en Venezuela desde el 27 de octubre 2025: ¿Cómo puedo cobrarlos? A poco de finalizar octubre 2025, se espera que se activen una serie de bonos a través del Sistema Patria en Venezuela. Todos los detalles en esta nota.",
-    "content": "En medio del incremento de los costos de vida, la hiperinflación y un bajo salario, los bonos del Sistema Patria, que son otorgados por el régimen de Nicolás Maduro, representan una gran ayuda para millones de venezolanos, quienes pueden cubrir sus n... [2568 chars]",
-    "url": "https://elcomercio.pe/respuestas/venezuela/sistema-patria-da-esta-buena-noticia-para-los-beneficiarios-de-estos-bonos-en-venezuela-desde-el-27-de-octubre-2025-como-puedo-cobrarlos-tdpe-noticia/",
-    "image": "https://elcomercio.pe/resizer/v2/4J3DRSA7FBEYHBRYYTXO7LVMBQ.jpg?auth=7552eac2c0d11df26dbb273e4ee7f0b713229c0d3ece4fd72a64a420e06f04d3&width=980&height=528&quality=75&smart=true",
-    "publishedAt": "2025-10-30T01:29:01Z",
-    "lang": "es",
-    "source": {
-      "id": "5543759f2254d07ae651834f4572d9ad",
-      "name": "El Comercio - Perú",
-      "url": "https://elcomercio.pe",
-      "country": "pe"
-    },
-    "_score": 4
-  },
-  {
-    "id": "fa7cbc1879d2b00db845572d76993981",
-    "title": "Nicolás Maduro pide quitar nacionalidad a quien \"se sume\" a una invasión extranjera en Venezuela",
-    "description": "El líder chavista dijo que el objetivo de su solicitud es que el Tribunal Supremo de Justicia (TSJ) \"autorice proceder y quitarle la nacionalidad venezolana, toda la documentación y todo lo que haya que quitarle\", a quien se preste a una invasión.",
-    "content": "El presidente de Venezuela, Nicolás Maduro, informó este miércoles que ha solicitado al Tribunal Supremo de Justicia (TSJ) una \"consideración constitucional\" para quitar la nacionalidad a todo \"vendepatria\" que \"se sume a un ejército extranjero imper... [1826 chars]",
-    "url": "https://rpp.pe/mundo/actualidad/nicolas-maduro-pide-quitar-nacionalidad-a-quien-se-sume-a-una-invasion-extranjera-en-venezuela-noticia-1661589",
-    "image": "https://e.rpp-noticias.io/large/2025/10/29/584858_1806819.webp",
-    "publishedAt": "2025-10-30T00:57:24Z",
-    "lang": "es",
-    "source": {
-      "id": "481c64adb278b5ef737a1b2af746b2ac",
-      "name": "RPP",
-      "url": "https://rpp.pe",
-      "country": "pe"
-    },
-    "_score": 4
-  },
-  {
-    "id": "9bdc416177f4650a4ba3384d6a13b5c5",
-    "title": "Persecución en Venezuela: la dictadura de Maduro secuestró a dos trabajadores vinculados a la familia de María Corina Machado",
-    "description": "El partido Vente Venezuela denunció que ambos hombres, encargados del cuidado de la residencia de la madre de Machado, llevan días en desaparición forzada y no han tenido acceso a defensa ni comunicación con familiares",
-    "content": "La organización opositora Vente Venezuela denunció este miércoles la desaparición forzada de Reinaldo Emilio Gutiérrez y su hijo Reinaldo Andrés Gutiérrez, encargados del cuidado y mantenimiento de la casa de Corina Parisca, madre de la líder de Vene... [3322 chars]",
-    "url": "https://www.infobae.com/venezuela/2025/10/30/persecucion-en-venezuela-la-dictadura-de-maduro-secuestro-a-dos-trabajadores-vinculados-a-la-familia-de-maria-corina-machado/",
-    "image": "https://www.infobae.com/resizer/v2/UUW7UVDQN5CUBD26SL3N4NVLOE.PNG?auth=059541b0db17011ba0c83b9dffabad88c7cfd0bab98b8690d2110d558181db26&smart=true&width=1200&height=630&quality=85",
-    "publishedAt": "2025-10-30T00:17:59Z",
-    "lang": "es",
-    "source": {
-      "id": "dd8e7fe51ba9869a4afbec0511eb1751",
-      "name": "infobae",
-      "url": "https://www.infobae.com",
-      "country": "pe"
-    },
-    "_score": 4
-  },
-  {
-    "id": "846afe88c9447dbcaf87a94bc500b048",
-    "title": "Nicolás Maduro afirma que la inteligencia venezolana frustró un plan de la CIA para atacar barcos de Estados Unidos en Trinidad y Tobago",
-    "description": "El mandatario aseguró que querían culpar a Venezuela para 'justificar una escalada y un enfrentamiento entre pueblos hermanos'.",
-    "content": "El presidente de Venezuela, Nicolás Maduro, afirmó este miércoles que la inteligencia y contrainteligencia de su país derrotó un presunto plan de la CIA de EE. UU. que, aseguró, consistía en atacar embarcaciones estadounidenses en Trinidad y Tobago, ... [2641 chars]",
-    "url": "https://www.eltiempo.com/mundo/venezuela/nicolas-maduro-afirma-que-la-inteligencia-venezolana-frustro-un-plan-de-la-cia-para-atacar-barcos-de-estados-unidos-en-trinidad-y-tobago-3504461",
-    "image": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/10/11/68eb2c38d628e.jpeg",
-    "publishedAt": "2025-10-29T23:35:10Z",
-    "lang": "es",
-    "source": {
-      "id": "f36613475913f037648c286b24d5e0c7",
-      "name": "El Tiempo",
-      "url": "https://www.eltiempo.com",
-      "country": "co"
-    },
-    "_score": 4
-  },
-  {
-    "id": "d325e7586fa6f1a0304ac94ed3376a66",
-    "title": "Venezuela intercepta 3 aeronaves usadas por el narcotráfico y que \"venían del norte\" y el \"Caribe\"",
-    "description": "Maduro informó en un acto oficial que \"se metió un avión del narcotráfico por el Caribe. Nuestra aviación en un segundo lo detectó\".",
-    "content": "El presidente de Venezuela, Nicolás Maduro, informó este miércoles que la Fuerza Armada interceptó en los últimos tres días a tres aeronaves que eran utilizadas para el narcotráfico y que \"venían del norte\" y del \"Caribe\".\nLa Fuerza Armada de Venezue... [572 chars]",
-    "url": "https://www.eluniversal.com.mx/mundo/venezuela-intercepta-3-aeronaves-usadas-por-el-narcotrafico-y-que-venian-del-norte-y-el-caribe/",
-    "image": "https://www.eluniversal.com.mx/resizer/v2/PMHIEAS5URHRBOVV6LMFOOCVQY.jpg?auth=44db21327a31d3084333d68c2333b13f35b466990eddd97cd48c38db356f2b28",
-    "publishedAt": "2025-10-29T23:03:04Z",
-    "lang": "es",
-    "source": {
-      "id": "5adb3f89a390ce32800455a2fd21ba42",
-      "name": "El Universal",
-      "url": "https://www.eluniversal.com.mx",
-      "country": "mx"
-    },
-    "_score": 4
   },
   {
     "id": "10281522b7a7f7ad46623b1c50250db0",
@@ -200,6 +132,40 @@
       "name": "The Sunday Times",
       "url": "https://www.thetimes.com",
       "country": "gb"
+    },
+    "_score": 3
+  },
+  {
+    "id": "d86e589e7ccfdc6436ee077b30c00944",
+    "title": "María Corina Machado cuestiona propuesta de Lula de mediar entre EE.UU. y el chavismo: \"No sé que cree que puede lograr\"",
+    "description": "La líder opositora venezolana María Corina Machado expresó su \"sorpresa\" ante la propuesta de mediación de Lula da Silva entre el chavismo y EE.UU.. Cuestionó los logros pasados de Lula frente a Maduro y afirmó que el pueblo venezolano está ausente en este análisis.",
+    "content": "La líder de la oposición al régimen chavista en Venezuela, María Corina Machado, cuestionó la reciente oferta del presidente de Brasil, Luiz Inácio Lula da Silva, de actuar como mediador entre Estados Unidos (EE.UU.) y el régimen de Nicolás Maduro en... [2817 chars]",
+    "url": "https://rpp.pe/mundo/venezuela/maria-corina-machado-cuestiona-propuesta-de-lula-de-mediar-entre-eeuu-y-venezuela-no-se-que-cree-que-puede-lograr-noticia-1661606",
+    "image": "https://e.rpp-noticias.io/large/2025/10/30/033903_1806852.webp",
+    "publishedAt": "2025-10-30T04:54:06Z",
+    "lang": "es",
+    "source": {
+      "id": "481c64adb278b5ef737a1b2af746b2ac",
+      "name": "RPP",
+      "url": "https://rpp.pe",
+      "country": "pe"
+    },
+    "_score": 3
+  },
+  {
+    "id": "c096120fdf7bd9145dcfd5e8d4a649e2",
+    "title": "Venezuela realiza operativos antidrogas e intercepta tres aeronaves",
+    "description": "Venezuela informó que interceptó tres aeronaves utilizadas para el narcotráfico que \"venían del norte\" y del \"Caribe\".",
+    "content": "Venezuela informó el miércoles que interceptó tres aeronaves utilizadas para el narcotráfico que “venían del norte” y del “Caribe”, y anunció la destrucción de dos campamentos en el marco de sus operativos antidrogas, que coinciden con el despliegue ... [2445 chars]",
+    "url": "https://elcomercio.pe/mundo/venezuela/venezuela-realiza-operativos-antidrogas-e-intercepta-tres-aeronaves-nicolas-maduro-donald-trump-estados-unidos-ultimas-noticia/",
+    "image": "https://elcomercio.pe/resizer/v2/FYFRHLKHYFHA7JVMLDXAGCMD2M.jpg?auth=2aecb874f85f784a8eb814ba6ee810807504d0575b9297641f4b6ff1738686bf&width=980&height=528&quality=75&smart=true",
+    "publishedAt": "2025-10-30T02:40:00Z",
+    "lang": "es",
+    "source": {
+      "id": "5543759f2254d07ae651834f4572d9ad",
+      "name": "El Comercio - Perú",
+      "url": "https://elcomercio.pe",
+      "country": "pe"
     },
     "_score": 3
   },
@@ -238,23 +204,6 @@
     "_score": 2
   },
   {
-    "id": "f87fae4f267309aebd087f7917bbe823",
-    "title": "U.S. interventions south of the border are almost as old as the nation",
-    "description": "With a U.S. Navy carrier strike group headed to the Caribbean to augment a naval armada there and President Donald Trump threatening not-so-covert operations and ground strikes against Venezuela, what is new?",
-    "content": "Oct. 29 (UPI) -- With a U.S. Navy carrier strike group headed to the Caribbean to augment a naval armada there and President Donald Trump threatening not-so-covert operations and ground strikes against Venezuela, what is new?\nAmericans may not rememb... [4886 chars]",
-    "url": "https://www.upi.com/Voices/2025/10/29/latin-america-united-states-intervention/2301761744983/",
-    "image": "https://cdnph.upi.com/sv/ph/og/upi/2301761744983/2025/1/322e4679bce788f2322cc804b5374a32/v1.5/US-interventions-south-of-the-border-are-almost-as-old-as-the-nation.jpg",
-    "publishedAt": "2025-10-29T16:42:00Z",
-    "lang": "en",
-    "source": {
-      "id": "79baacd62152cf257ee35e8c0bec19a2",
-      "name": "UPI News",
-      "url": "https://www.upi.com",
-      "country": "us"
-    },
-    "_score": 2
-  },
-  {
     "id": "dc04738e2412b15f51d83c12e67eca5c",
     "title": "Trump should beware of backing regime change in Venezuela",
     "description": "Few Americans find much to celebrate in the Iraq War or the intervention in Libya. Regimes were successfully changed, but what came after Saddam Hussein and Muammar Gaddafi was civil war, regional instability and mass migration that exported many of those nations’ troubles to their neighbours. Now the Donald Trump administration wants to do to",
@@ -289,36 +238,70 @@
     "_score": 1
   },
   {
-    "id": "8200677d26e3e9c34dc1a6ba5eaed668",
-    "title": "Jordan: America has an interest in stopping drug cartels, not in extrajudicial executions",
-    "description": "Robert Jordan: The US military buildup off the coast of Venezuela is troubling. America has clear interests in combatting drug cartels and in promoting...",
-    "content": "The Pentagon has announced that the U.S. is deploying the aircraft carrier Gerald R. Ford to the waters off Latin America. The Ford is America’s largest aircraft carrier, with roughly 5,000 Marines and sailors aboard, along with more than 75 attack, ... [4530 chars]",
-    "url": "https://www.dallasnews.com/opinion/commentary/2025/10/29/jordan-america-has-an-interest-in-stopping-drug-cartels-not-in-extrajudicial-executions/",
-    "image": "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/v2/PDVIGN3FNVAVJAUFL736NNSSYI.jpg?auth=38e275b40de69e2cfffe145c82f21adc11161f32bc202973ff2a56daeabed9dd&quality=80&width=1200&height=630&smart=true",
-    "publishedAt": "2025-10-29T19:00:00Z",
-    "lang": "en",
+    "id": "d869632870cc959ba9e2249537d85e08",
+    "title": "Guerra de Ucrania y conflicto en Gaza, en directo: Trump ordena probar armas nucleares “inmediatamente”",
+    "description": "Sigue en directo la última hora de la guerra de Ucrania, el conflicto en la Franja de Gaza y la tensión entre Estados Unidos y Venezuela.",
+    "content": "Trump ordena probar armas nucleares \"inmediatamente\"\nEl presidente de Estados Unidos, Donald Trump, afirmó este jueves que ha ordenado empezar a probar \"inmediatamente\" el arsenal nuclear estadounidense \"debido a los programas de pruebas de otros paí... [3570 chars]",
+    "url": "https://as.com/actualidad/politica/guerra-de-ucrania-y-conflicto-en-gaza-en-directo-trump-ordena-probar-armas-nucleares-inmediatamente-f202510-d/",
+    "image": "https://img.asmedia.epimg.net/resizer/v2/U5GUFGFX3RMQVK2S2O2HRGH3DM.jpg?auth=08f876c512aaf6272b7b18411c20c6caae84e78503027cbe082628a210e496f9&width=1472&height=828&smart=true",
+    "publishedAt": "2025-10-30T06:41:07Z",
+    "lang": "es",
     "source": {
-      "id": "43ce1d937b6aed9ea231b649cb2b7b4b",
-      "name": "The Dallas Morning News",
-      "url": "https://www.dallasnews.com",
-      "country": "us"
+      "id": "784fcafe61c3bdcfb2f6d6e34ddbddd5",
+      "name": "AS ",
+      "url": "https://as.com",
+      "country": "pe"
     },
     "_score": 1
   },
   {
-    "id": "8c1874f5737a7524ed7fdf674ad16713",
-    "title": "Denuncian arresto de dos trabajadores de la casa de Corina Parisca, madre de María Corina Machado",
-    "description": "Corina Parisca, madre de Machado, abandonó el país el 7 de mayo de 2025. Su hija permanece en la clandestinidad.",
-    "content": "El Comité de Derechos Humanos del partido opositor Vente Venezuela (VV) denunció la detención de dos ciudadanos, a quienes califican como \"secuestrados y sometidos a desaparición forzada\", por su vinculación con la familia de la líder opositora María... [2009 chars]",
-    "url": "https://www.eltiempo.com/mundo/venezuela/denuncian-arresto-de-dos-trabajadores-de-la-casa-de-corina-parisca-madre-de-maria-corina-machado-3504443",
-    "image": "https://imagenes2.eltiempo.com/files/og_thumbnail/uploads/2025/10/29/69029b898f368.png",
-    "publishedAt": "2025-10-29T22:59:51Z",
+    "id": "68d90ec14378667c901e9512182bf510",
+    "title": "Trump manda 100.000 toneladas de diplomacia militar frente a las costas de Venezuela",
+    "description": "Tras semanas de operaciones militares contra supuestas narcoembarcaciones ligeras, el despliegue estadounidense en el Caribe entra en una nueva fase. Una con potencia para ejecutar operaciones militares de alto calado estratégico",
+    "content": "Tras varias semanas de operaciones militares contra supuestas narcoembarcaciones ligeras, el despliegue estadounidense en el Caribe entra en una nueva fase. Una con potencia para ejecutar operaciones militares limitadas, pero de alto calado estratégi... [10502 chars]",
+    "url": "https://www.elconfidencial.com/mundo/2025-10-30/pentagono-portaaviones-caribe-venezuela-1hms_4238105/",
+    "image": "https://images.ecestaticos.com/41haCTlkC7x-78Sw-0dtM3NPDQk=/0x0:2272x1515/600x315/filters:fill(white):format(jpg):quality(99):watermark(f.elconfidencial.com/file/bae/eea/fde/baeeeafde1b3229287b0c008f7602058.png,0,275,1)/f.elconfidencial.com/original/cb3/a49/ced/cb3a49ced0bf464d156dbe4b9c6e68a6.jpg",
+    "publishedAt": "2025-10-30T04:00:00Z",
     "lang": "es",
     "source": {
-      "id": "f36613475913f037648c286b24d5e0c7",
-      "name": "El Tiempo",
-      "url": "https://www.eltiempo.com",
-      "country": "co"
+      "id": "41014121e3a7ae2668007e01b153f8ba",
+      "name": "El Confidencial",
+      "url": "https://www.elconfidencial.com",
+      "country": "es"
+    },
+    "_score": 1
+  },
+  {
+    "id": "51afc42906c16d964301e280b94d6189",
+    "title": "Cronología: Así han sido los ataques de EU a 15 “narcolanchas” en aguas del Caribe y el Pacífico",
+    "description": "El aumento de tensiones empezó en agosto con el despliegue de buques del Ejército estadounidense en el Caribe y con Venezuela en el punto de mira, pero ya se ha extendido a aguas del Pacífico",
+    "content": "El Ejército de Estados Unidos asegura que ha hundido 15 embarcaciones y 61 vidas en aguas del Caribe y del Pacífico a raíz de 12 ataques, en una nueva etapa de su guerra contra las drogas.\nBajo el argumento de combatir el narcotráfico, la Administrac... [5364 chars]",
+    "url": "https://www.eluniversal.com.mx/mundo/cronologia-asi-han-sido-los-ataques-de-eu-a-15-narcolanchas-en-aguas-del-caribe-y-el-pacifico/",
+    "image": "https://www.eluniversal.com.mx/resizer/v2/M4Q27AV5JVHMTKTNIM3HXRQ3VE.jpg?auth=e0fdcd61e6a1c808f880ad307590dbafc126e4d820d9e8f54f76a83518933434",
+    "publishedAt": "2025-10-30T02:40:28Z",
+    "lang": "es",
+    "source": {
+      "id": "5adb3f89a390ce32800455a2fd21ba42",
+      "name": "El Universal",
+      "url": "https://www.eluniversal.com.mx",
+      "country": "mx"
+    },
+    "_score": 1
+  },
+  {
+    "id": "2b3b3eb151a276d922247f87401a56c7",
+    "title": "Los doce ataques de EE.UU. contra lanchas en el Caribe y el Pacífico",
+    "description": "Los doce ataques de EE.UU. contra lanchas en el Caribe y el Pacífico. El 2 de septiembre Estados Unidos anuncia el primer ataque contra una embarcación y asegura que salieron de Venezuela para transportar drogas hacia norteamérica.",
+    "content": "El Ejército de EE.UU. asegura que ha hundido quince embarcaciones y 61 vidas en aguas del Caribe y del Pacífico a raíz de doce ataques, en una nueva etapa de su guerra contra las drogas.\nBajo el argumento de combatir el narcotráfico, la Administració... [4183 chars]",
+    "url": "https://gestion.pe/mundo/eeuu/los-doce-ataques-de-eeuu-contra-lanchas-en-el-caribe-y-el-pacifico-noticia/",
+    "image": "https://gestion.pe/resizer/v2/P63XVFTKFFGL3NRHTCPRYJKVDM.jpg?auth=5ee2302407c748426f7017980d5b5b6eac5462f26a4ef06012db17765fde01d5&width=980&height=528&quality=75&smart=true",
+    "publishedAt": "2025-10-30T02:28:49Z",
+    "lang": "es",
+    "source": {
+      "id": "21d9813d64bbf53889450a7e28291c58",
+      "name": "Diario Gestión",
+      "url": "https://gestion.pe",
+      "country": "pe"
     },
     "_score": 1
   }

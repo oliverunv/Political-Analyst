@@ -1,0 +1,7 @@
+Spanish police have arrested 13 individuals suspected of being members of the Venezuelan Tren de Aragua gang. The arrests took place across five cities in Spain, marking the first operation in the country aimed at dismantling a cell of this gang, which originated in Venezuela. Meanwhile, Russia has expressed readiness to provide military assistance to Venezuela, responding to requests from President Nicolás Maduro amid increased U.S. military presence in the Caribbean. In the United States, a Senate war powers resolution intended to restrict future military activities in Venezuela without congressional approval failed to pass, with a narrow vote of 51-49. Additionally, the U.S. Court of Appeals for the Second Circuit has made a significant decision involving Citgo Petroleum Corp. and its insurer, related to $54 million worth of seized Venezuelan crude oil and the legitimacy of the Maduro regime. These developments highlight ongoing international and domestic tensions surrounding Venezuela.
+
+**Key Developments Today:**
+- Spanish police arrested 13 suspected members of Venezuela's Tren de Aragua gang.
+- Russia is prepared to assist Venezuela militarily amid U.S. military presence in the Caribbean.
+- A U.S. Senate resolution to limit military actions in Venezuela failed narrowly.
+- U.S. Court of Appeals ruled on a case involving seized Venezuelan crude oil and Citgo.

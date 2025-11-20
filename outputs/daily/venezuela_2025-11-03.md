@@ -1,0 +1,8 @@
+President Donald Trump has indicated that while he doubts the United States will go to war with Venezuela, he believes the days of Venezuelan President Nicolás Maduro are numbered. In recent statements, Trump has sent mixed signals regarding potential U.S. military intervention in Venezuela. He has downplayed the likelihood of an imminent war but has maintained a firm stance against Maduro, whom the U.S. has accused of narcotrafficking. The U.S. government has placed a $50 million bounty for information leading to Maduro's arrest. Despite the increased military presence in the Caribbean, Trump has refrained from discussing specific military plans. Meanwhile, Maduro has accused Trump of using drug trafficking as a pretext for regime change in Venezuela and has reportedly sought assistance from Russia, a claim confirmed by the Kremlin. Tensions remain high as the international community closely monitors the situation.
+
+**Key Developments Today:**
+
+- President Trump doubts the U.S. will engage in war with Venezuela but asserts Maduro's presidency is nearing its end.
+- The U.S. has increased military presence in the Caribbean, fueling speculation of potential intervention.
+- The U.S. has accused Maduro of narcotrafficking, offering a $50 million reward for his capture.
+- Maduro has accused the U.S. of using drug trafficking as a pretext for regime change and has sought support from Russia.

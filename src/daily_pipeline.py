@@ -1,32 +1,60 @@
-import os, json, datetime, time, requests
+import os, json, time, requests
 from openai import OpenAI
-from src.config import GNEWS_API_KEY, OPENAI_API_KEY, QUERY, LANGS, TODAY
+from src.config import GNEWS_API_KEY, OPENAI_API_KEY, QUERY, LANGS
 from datetime import datetime, timedelta, timezone
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # -----------------------------------------------------
-# 1️⃣ FETCH: get today's articles (GNews)
+# 🌍 LOCAL TIME SETTINGS
+# -----------------------------------------------------
+# New York: -5 in winter (EST), -4 in summer (EDT)
+LOCAL_OFFSET_HOURS = -5  # adjust seasonally if needed
+LOCAL_TZ = timezone(timedelta(hours=LOCAL_OFFSET_HOURS))
+
+# -----------------------------------------------------
+# 1️⃣ FETCH: get articles for the last completed 24h window
+#     Window ends at 08:00 local on report_date
 # -----------------------------------------------------
 def fetch_articles():
-    print("⏳ Fetching today's news (via GNews)...")
+    print("⏳ Fetching daily news (via GNews)...")
     BASE = "https://gnews.io/api/v4/search"
     results = []
 
-    # --- Time window ---
-    LOCAL_OFFSET_HOURS = -4
-    now = datetime.now(timezone.utc) + timedelta(hours=LOCAL_OFFSET_HOURS)
-    end_time = now.replace(hour=8, minute=0, second=0, microsecond=0)
-    # if run before 8 a.m., still close previous window
-    if now.hour < 8:
-        end_time -= timedelta(days=1)
-    start_time = end_time - timedelta(days=1)
+    # --- Determine report_date based on local time ---
+    now_utc = datetime.now(timezone.utc)
+    now_local = now_utc.astimezone(LOCAL_TZ)
+    local_today = now_local.date()
+
+    # If before 08:00 → close previous day's window
+    # If after 08:00 → close today's window
+    if now_local.hour < 8:
+        report_date = local_today - timedelta(days=1)
+    else:
+        report_date = local_today
+
+    # End of window: 08:00 local on report_date
+    end_local = datetime(
+        year=report_date.year,
+        month=report_date.month,
+        day=report_date.day,
+        hour=8,
+        minute=0,
+        second=0,
+        tzinfo=LOCAL_TZ,
+    )
+    start_local = end_local - timedelta(days=1)
+
+    # Convert to UTC for API
+    start_time = start_local.astimezone(timezone.utc)
+    end_time = end_local.astimezone(timezone.utc)
 
     from_date = start_time.isoformat().replace("+00:00", "Z")
     to_date = end_time.isoformat().replace("+00:00", "Z")
-    report_date = end_time.date().isoformat()
 
-    print(f"🕒 Time window: {from_date} → {to_date}")
+    print(f"📆 Local now: {now_local} (today={local_today})")
+    print(f"🗓️ Report date: {report_date}")
+    print(f"🕒 Time window (UTC): {from_date} → {to_date}")
 
     for lang in LANGS:
         params = {
@@ -52,11 +80,14 @@ def fetch_articles():
         time.sleep(1.2)  # respect rate limit
 
     os.makedirs("data/raw", exist_ok=True)
-    raw_path = f"data/raw/news_{TODAY}.json"
+    raw_path = f"data/raw/news_{report_date}.json"
     with open(raw_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
-    print(f"✅ Fetched {len(results)} articles → {raw_path}")
-    return results, report_date
+    print(f"🔎 Total articles fetched: {len(results)}")
+    print(f"✅ Fetched articles saved → {raw_path}")
+
+    # Return both list and ISO string for filenames
+    return results, report_date.isoformat()
 
 
 # -----------------------------------------------------
@@ -84,7 +115,7 @@ def clean_rank(raw):
 
     curated.sort(key=lambda x: x["_score"], reverse=True)
     os.makedirs("data/curated", exist_ok=True)
-    path = f"data/curated/venezuela_latest.json"
+    path = "data/curated/venezuela_latest.json"
     with open(path, "w", encoding="utf-8") as f:
         json.dump(curated, f, ensure_ascii=False, indent=2)
     print(f"✅ Curated {len(curated)} relevant articles → {path}")
@@ -135,7 +166,16 @@ Articles:
 # -----------------------------------------------------
 if __name__ == "__main__":
     articles, report_date = fetch_articles()
+
+    if not articles:
+        print(f"⚠️ No articles found for {report_date}, aborting.")
+        raise SystemExit(0)
+
     curated = clean_rank(articles)
+    if not curated:
+        print(f"⚠️ No curated Venezuela articles for {report_date}, aborting.")
+        raise SystemExit(0)
+
     summary = summarize(curated)
 
     os.makedirs("outputs/daily", exist_ok=True)

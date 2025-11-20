@@ -12,14 +12,19 @@ local_today = (datetime.now(timezone.utc) + timedelta(hours=LOCAL_OFFSET_HOURS))
 client = OpenAI(api_key=OPENAI_API_KEY)
 
 # -----------------------------------------------------
-# 1️⃣ FETCH WEEKLY NEWS (with caching)
+# 1️⃣ FETCH WEEKLY NEWS (for an arbitrary week)
 # -----------------------------------------------------
-def fetch_week():
-    """Fetch or reuse this week's news articles from GNews."""
-    print("⏳ Fetching this week's news (via GNews)...")
+def fetch_week_for_range(start_date, end_date):
+    """
+    Fetch news articles for a specific inclusive date range [start_date, end_date].
+    Example: 2025-11-10 to 2025-11-16 (7 days).
+    """
+    print(f"\n⏳ Fetching weekly news {start_date} → {end_date} (via GNews)...")
     base = "https://gnews.io/api/v4/search"
-    today = local_today
-    path = f"data/raw/news_week_{today}.json"
+
+    # cache filename per week-range
+    label = f"{start_date}_to_{end_date}"
+    path = f"data/raw/news_week_{label}.json"
 
     # ✅ Reuse cached file if available
     if os.path.exists(path):
@@ -28,8 +33,8 @@ def fetch_week():
             return json.load(f)
 
     results = []
-    for i in range(7):
-        day = today - timedelta(days=i)
+    day = start_date
+    while day <= end_date:
         print(f"📅 Fetching {day}...")
         for lang in LANGS:
             params = {
@@ -49,13 +54,13 @@ def fetch_week():
                 a["lang"] = lang
             results.extend(articles)
             time.sleep(1.2)
+        day += timedelta(days=1)
 
     os.makedirs("data/raw", exist_ok=True)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"✅ Saved {len(results)} articles → {path}")
     return results
-
 
 # -----------------------------------------------------
 # 2️⃣ CLEAN & RANK ARTICLES
@@ -218,34 +223,63 @@ Avoid speculation or editorial tone.
 
 
 # -----------------------------------------------------
-# 6️⃣ MAIN PIPELINE
+# 6️⃣ MAIN PIPELINE – run for last completed week
 # -----------------------------------------------------
 if __name__ == "__main__":
-    articles = fetch_week()
-    curated = clean_rank(articles)
+    # 1) Compute "today" in local (New York) time
+    local_today = (datetime.now(timezone.utc) + timedelta(hours=LOCAL_OFFSET_HOURS)).date()
+    print(f"📆 Local today: {local_today}")
+
+    # Monday = 0, Sunday = 6
+    weekday = local_today.weekday()
+    current_week_monday = local_today - timedelta(days=weekday)
+
+    # Last completed week is Monday–Sunday BEFORE the current week
+    week_start = current_week_monday - timedelta(days=7)  # last Monday
+    week_end = current_week_monday - timedelta(days=1)    # last Sunday
+
+    label = f"{week_start}_to_{week_end}"
+    print(f"🗓️ Generating Weekly Watch for {week_start} → {week_end} (label: {label})")
+
+    # 2) Load static context & scenarios once
     context = load_context()
     scenarios = load_scenarios()
 
+    # 3) Fetch news for that week
+    articles = fetch_week_for_range(week_start, week_end)
+    if not articles:
+        print(f"⚠️ No articles for week {label}, aborting.")
+        raise SystemExit(0)
+
+    # 4) Clean & rank
+    curated = clean_rank(articles)
+    if not curated:
+        print(f"⚠️ No curated Venezuela articles for week {label}, aborting.")
+        raise SystemExit(0)
+
+    # 5) Summarize (structured + narrative)
     print("🧠 Generating weekly synthesis...")
     structured_reasoning, summary = summarize_week(curated, scenarios, context)
 
-    # Save narrative report
+    # 6) Save narrative report
     os.makedirs("outputs/weekly", exist_ok=True)
-    out_path = f"outputs/weekly/venezuela_week_{local_today}.md"
+    out_path = f"outputs/weekly/venezuela_week_{label}.md"
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(summary)
     print(f"\n✅ Weekly Watch saved → {out_path}")
 
-    # Save structured reasoning
+    # 7) Save structured reasoning log
     os.makedirs("data/logs", exist_ok=True)
     log_path = "data/logs/scenarios_log.jsonl"
     with open(log_path, "a", encoding="utf-8") as f:
         for e in structured_reasoning:
-            e["date"] = str(local_today)
+            e["week_start"] = str(week_start)
+            e["week_end"] = str(week_end)
+            e["report_generated_on"] = str(local_today)
             f.write(json.dumps(e, ensure_ascii=False) + "\n")
     print(f"🗂️ Logged structured reasoning → {log_path}")
 
-    # Console preview
+    # 8) Console preview
     print("\n--- Preview ---\n")
     print(summary[:800])
     print("\n--- Scenario Reasoning ---")

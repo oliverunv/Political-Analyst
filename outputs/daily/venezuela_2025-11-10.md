@@ -1,0 +1,7 @@
+India has sent a consignment of approximately 2.7 tonnes of life-saving vaccines to Venezuela as part of its commitment to support Global South countries. This initiative was confirmed by the Ministry of External Affairs in India, highlighting the country's ongoing efforts to contribute to global health. Meanwhile, the United States has increased military pressure on Venezuela by deploying B-52 bombers within 50 miles of the Venezuelan coast. This marks the fourth such flight since mid-October, accompanied by warships and the USS Gerald Ford aircraft carrier. The bombers have kept their transponders active, indicating a show of force, and raising concerns about potential psychological warfare or preparation for conflict. Additionally, in Venezuela, a new financial benefit, the Bono de Corresponsabilidad y Formación, began distribution on November 7, 2025. This subsidy, which has been increased by 24% in bolívares, is part of the Sistema Patria and aims to support Venezuelan citizens.
+
+**Key Developments Today**
+- India dispatched 2.7 tonnes of life-saving vaccines to Venezuela.
+- The U.S. deployed B-52 bombers near Venezuela, marking the fourth flight since October.
+- Concerns rise over U.S. military activities near Venezuela, suggesting psychological warfare.
+- Venezuela began distributing the Bono de Corresponsabilidad y Formación with a 24% increase.

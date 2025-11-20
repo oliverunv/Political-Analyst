@@ -1,0 +1,8 @@
+Venezuelan opposition leader María Corina Machado has released a "freedom manifesto" from a secret location, calling for accountability for President Nicolás Maduro regarding alleged crimes against humanity. Machado, who recently received a Nobel Peace Prize, envisions a new era for Venezuela without Maduro. Meanwhile, President Maduro has been using state media to promote a cartoon alter-ego, "Super Mustache," as part of a propaganda campaign amidst increasing U.S. pressure. In a separate development, U.S. President Donald Trump has authorized the CIA to prepare covert operations in Venezuela, as part of a broader strategy to pressure the Maduro regime. This comes as tensions rise between the U.S. and Venezuela, with military presence in the Caribbean. Additionally, in a symbolic gesture, Maduro declared Jesus Christ as the "owner" of Venezuela during a prayer meeting for peace. On the sports front, Canada defeated Venezuela 2-0 in an international friendly soccer match, which saw both teams reduced to ten men following red cards.
+
+**Key Developments Today:**
+- María Corina Machado released a "freedom manifesto" calling for Maduro's accountability.
+- Nicolás Maduro promotes "Super Mustache" as part of a state propaganda effort.
+- President Trump authorized CIA covert operations in Venezuela.
+- Maduro declared Jesus Christ as the "owner" of Venezuela amid U.S. tensions.
+- Canada won 2-0 against Venezuela in a soccer match, with both teams receiving red cards.

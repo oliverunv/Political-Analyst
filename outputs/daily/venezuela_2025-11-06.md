@@ -1,0 +1,8 @@
+The United States is currently increasing military presence in the Caribbean as part of President Donald Trump's strategy concerning Venezuela. The Senate is preparing to vote on a bipartisan measure aimed at preventing Trump from initiating military action against Venezuela. This vote represents a significant test of congressional opposition to the president's use of military force in Latin America. Meanwhile, the Central Bank of Venezuela has updated the official exchange rate for the U.S. dollar, which is crucial for economic transactions within the country. Additionally, Pope Leo has publicly criticized President Trump's military actions near Venezuela and his administration's treatment of migrants. The Venezuelan government, under Nicolás Maduro, continues to prepare for potential asymmetric warfare, with military assets from various countries, including Iran, Russia, and China. The Spanish government, led by Pedro Sánchez, has expressed a preference for resolving the Venezuelan crisis through peaceful and negotiated means to restore democratic stability.
+
+**Key Developments Today:**
+- The U.S. increases military presence in the Caribbean amid tensions with Venezuela.
+- The Senate will vote on a measure to block potential U.S. military action against Venezuela.
+- The Central Bank of Venezuela updates the official U.S. dollar exchange rate.
+- Pope Leo criticizes Trump's military actions near Venezuela and migrant policies.
+- Spain advocates for peaceful solutions to restore democracy in Venezuela.

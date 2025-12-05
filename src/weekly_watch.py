@@ -3,6 +3,30 @@ from datetime import datetime, timedelta, timezone
 from openai import OpenAI
 from .config import GNEWS_API_KEY, OPENAI_API_KEY, QUERY, LANGS
 
+
+def parse_week_start_from_filename(filename):
+    prefix = "venezuela_week_"
+    suffix = ".md"
+    if not (filename.startswith(prefix) and filename.endswith(suffix)):
+        raise ValueError("Invalid filename")
+    date_part = filename[len(prefix):-len(suffix)]
+    monday_str = date_part.split("_to_")[0]
+    return datetime.strptime(monday_str, "%Y-%m-%d").date()
+
+
+def find_latest_report_start(dir_path="outputs/weekly"):
+    if not os.path.isdir(dir_path):
+        return None
+    latest = None
+    for name in os.listdir(dir_path):
+        try:
+            start = parse_week_start_from_filename(name)
+        except ValueError:
+            continue
+        if latest is None or start > latest:
+            latest = start
+    return latest
+
 # -----------------------------------------------------
 # 🕒 LOCAL DATE
 # -----------------------------------------------------
@@ -225,50 +249,29 @@ Avoid speculation or editorial tone.
 # -----------------------------------------------------
 # 6️⃣ MAIN PIPELINE – run for last completed week
 # -----------------------------------------------------
-if __name__ == "__main__":
-    # 1) Compute "today" in local (New York) time
-    local_today = (datetime.now(timezone.utc) + timedelta(hours=LOCAL_OFFSET_HOURS)).date()
-    print(f"📆 Local today: {local_today}")
-
-    # Monday = 0, Sunday = 6
-    weekday = local_today.weekday()
-    current_week_monday = local_today - timedelta(days=weekday)
-
-    # Last completed week is Monday–Sunday BEFORE the current week
-    week_start = current_week_monday - timedelta(days=7)  # last Monday
-    week_end = current_week_monday - timedelta(days=1)    # last Sunday
-
+def generate_weekly_report(week_start, week_end, local_today, context, scenarios):
     label = f"{week_start}_to_{week_end}"
     print(f"🗓️ Generating Weekly Watch for {week_start} → {week_end} (label: {label})")
 
-    # 2) Load static context & scenarios once
-    context = load_context()
-    scenarios = load_scenarios()
-
-    # 3) Fetch news for that week
     articles = fetch_week_for_range(week_start, week_end)
     if not articles:
         print(f"⚠️ No articles for week {label}, aborting.")
         raise SystemExit(0)
 
-    # 4) Clean & rank
     curated = clean_rank(articles)
     if not curated:
         print(f"⚠️ No curated Venezuela articles for week {label}, aborting.")
         raise SystemExit(0)
 
-    # 5) Summarize (structured + narrative)
     print("🧠 Generating weekly synthesis...")
     structured_reasoning, summary = summarize_week(curated, scenarios, context)
 
-    # 6) Save narrative report
     os.makedirs("outputs/weekly", exist_ok=True)
     out_path = f"outputs/weekly/venezuela_week_{label}.md"
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(summary)
     print(f"\n✅ Weekly Watch saved → {out_path}")
 
-    # 7) Save structured reasoning log
     os.makedirs("data/logs", exist_ok=True)
     log_path = "data/logs/scenarios_log.jsonl"
     with open(log_path, "a", encoding="utf-8") as f:
@@ -279,9 +282,40 @@ if __name__ == "__main__":
             f.write(json.dumps(e, ensure_ascii=False) + "\n")
     print(f"🗂️ Logged structured reasoning → {log_path}")
 
-    # 8) Console preview
     print("\n--- Preview ---\n")
     print(summary[:800])
     print("\n--- Scenario Reasoning ---")
     for e in structured_reasoning:
         print(f"{e['id']} ({e['plausibility']}): {e['reasoning']}")
+
+
+if __name__ == "__main__":
+    local_today = (datetime.now(timezone.utc) + timedelta(hours=LOCAL_OFFSET_HOURS)).date()
+    print(f"📆 Local today: {local_today}")
+
+    weekday = local_today.weekday()
+    current_week_monday = local_today - timedelta(days=weekday)
+
+    target_week_start = current_week_monday - timedelta(days=7)
+
+    latest_existing_start = find_latest_report_start()
+    weeks_to_generate = []
+
+    if latest_existing_start is None:
+        weeks_to_generate.append(target_week_start)
+    else:
+        candidate = latest_existing_start + timedelta(days=7)
+        while candidate <= target_week_start:
+            weeks_to_generate.append(candidate)
+            candidate += timedelta(days=7)
+
+    if not weeks_to_generate:
+        print("✅ Weekly reports are up to date. Nothing to generate.")
+        raise SystemExit(0)
+
+    context = load_context()
+    scenarios = load_scenarios()
+
+    for start in weeks_to_generate:
+        end = start + timedelta(days=6)
+        generate_weekly_report(start, end, local_today, context, scenarios)

@@ -1,0 +1,8 @@
+Venezuelan President Nicolás Maduro confirmed a phone conversation with U.S. President Donald Trump, which took place approximately ten days ago. Maduro described the call as respectful and initiated by the White House. Meanwhile, the U.S. Department of State has maintained a Level 4 "Do Not Travel" advisory for Venezuela due to rising tensions related to the U.S.'s anti-drug trafficking campaign and pressure on the Maduro government. In aviation developments, Panamanian airline Copa Airlines and several other international carriers have suspended flights to and from Venezuela, citing navigation signal issues and security alerts from the U.S. Federal Aviation Administration. The U.S. has also increased its military presence near Venezuela, deploying a significant naval force in the Caribbean, including the USS George Washington aircraft carrier, as part of its ongoing pressure campaign against the Maduro regime. Additionally, Trinidad and Tobago's Prime Minister confirmed the installation of a U.S. radar system aimed at curbing sanctioned Venezuelan oil movements and drug trafficking.
+
+**Key Developments Today:**
+- Maduro confirmed a respectful phone call with Trump initiated by the White House.
+- The U.S. maintains a Level 4 "Do Not Travel" advisory for Venezuela.
+- Copa Airlines and other carriers suspended flights to Venezuela due to navigation issues and security alerts.
+- The U.S. has deployed a significant naval force in the Caribbean near Venezuela.
+- A U.S. radar system was installed in Trinidad and Tobago to combat Venezuelan oil and drug trafficking.

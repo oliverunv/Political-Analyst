@@ -1,0 +1,9 @@
+Venezuela has revoked the operating permits of six major international airlines, including Iberia, TAP, Avianca, Latam Colombia, Turkish Airlines, and Gol. This action follows the airlines' suspension of flights to Venezuela after a warning from the U.S. Federal Aviation Administration regarding heightened security risks in Venezuelan airspace. The Venezuelan government had issued a 48-hour ultimatum to these airlines, which expired without compliance, prompting the revocation of their operating rights. This decision further reduces Venezuela's connectivity with international destinations and comes amid escalating tensions between the United States and Venezuela. The move is part of a broader response by President Nicolás Maduro's administration to external pressures, including increased U.S. military presence in the region. Additionally, there are reports from Venezuelan opposition groups and human rights organizations of intensified internal repression by the government, described as "surgical repression," which has heightened internal tensions within the country.
+
+**Key Developments Today:**
+
+- Venezuela revoked operating permits for six international airlines after a 48-hour ultimatum expired.
+- The airlines affected include Iberia, TAP, Avianca, Latam Colombia, Turkish Airlines, and Gol.
+- The revocation follows the airlines' suspension of flights due to U.S. warnings about airspace security risks.
+- The decision reduces Venezuela's international connectivity amid rising U.S.-Venezuela tensions.
+- Reports indicate increased internal repression in Venezuela, described as "surgical," by opposition groups.

@@ -1,0 +1,8 @@
+The United States has been deploying warships near the coast of Venezuela, focusing on a military pressure campaign against Nicolás Maduro's regime. This deployment is reportedly not aligned with the main Caribbean drug trafficking routes, indicating a strategic focus on Venezuela. In response to the heightened military activity, the U.S. Federal Aviation Administration (FAA) has issued a warning to commercial flights to exercise caution when flying over Venezuela and the southern Caribbean due to increased security risks. This advisory is set to last for 90 days. Additionally, South Korea has raised its travel alert to the highest level for four Venezuelan provinces—Zulia, Táchira, Apure, and Sucre—citing security concerns and regional tensions. Meanwhile, Venezuela has repatriated 200 migrants from the United States, including five children, on a flight from Phoenix. These developments come amid ongoing international scrutiny and diplomatic tensions involving Venezuela.
+
+**Key Developments Today:**
+
+- The U.S. Navy has positioned warships near Venezuela, focusing on a military pressure campaign against Maduro.
+- The FAA has issued a 90-day advisory for commercial flights to exercise caution over Venezuela due to security risks.
+- South Korea has prohibited travel to four Venezuelan provinces, citing high security risks.
+- Venezuela has repatriated 200 migrants from the United States, including five children.

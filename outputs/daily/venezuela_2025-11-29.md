@@ -1,0 +1,8 @@
+President Donald Trump and Venezuelan President Nicolas Maduro engaged in a phone conversation last week, discussing the possibility of a future meeting in the United States. This call occurred just days before the U.S. State Department officially classified Maduro as the leader of the Cartel de los Soles, a group the U.S. government considers a foreign terrorist organization. In a related development, President Trump has declared that the airspace over and around Venezuela should be considered closed. This announcement was directed at airlines, pilots, drug traffickers, and human traffickers, amid heightened military tensions between the U.S. and Venezuela. Furthermore, Trump indicated that U.S. military operations targeting the Cartel de los Soles, which have so far been limited to maritime actions, are expected to expand to land operations within Venezuela. These developments mark a significant escalation in the ongoing standoff between the two nations.
+
+**Key Developments Today:**
+
+- President Trump and President Maduro discussed a potential meeting during a phone call last week.
+- The U.S. State Department has designated Maduro as the leader of the Cartel de los Soles, a foreign terrorist organization.
+- Trump announced that Venezuela's airspace should be considered closed, amid rising military tensions.
+- U.S. military operations against the Cartel de los Soles are set to expand onto Venezuelan land.

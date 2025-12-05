@@ -1,0 +1,8 @@
+Venezuelan President Nicolas Maduro made a public appearance on Sunday, ending speculation that he had fled the country amid heightened tensions with the United States. This appearance came after several days of absence, during which rumors circulated about his potential departure following an ultimatum from U.S. President Donald Trump. Trump reportedly demanded that Maduro relinquish power immediately, but Maduro refused, seeking a "global amnesty" for himself and his allies instead. The U.S. has been increasing military presence in the Caribbean and has announced the closure of airspace around Venezuela, further escalating tensions. Additionally, the International Criminal Court (ICC) announced the closure of its office in Caracas due to a lack of progress in investigations into alleged crimes against humanity, although the investigation remains active.
+
+**Key Developments Today:**
+
+- Venezuelan President Nicolas Maduro appeared publicly after days of absence, quelling rumors of his flight from the country.
+- U.S. President Donald Trump reportedly issued an ultimatum to Maduro to relinquish power, which Maduro rejected.
+- The U.S. has increased military presence in the Caribbean and closed airspace around Venezuela.
+- The International Criminal Court closed its Caracas office due to insufficient progress in investigations but continues its probe into alleged crimes against humanity.

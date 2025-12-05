@@ -1,0 +1,8 @@
+International airlines have canceled flights to Venezuela following a warning from the U.S. Federal Aviation Administration (FAA) about security risks and increased military activity in the region. The FAA issued an alert advising pilots to exercise caution when flying over Venezuela due to a "potentially hazardous situation." As a result, six airlines, including TAP Air Portugal and Iberia, have suspended their operations involving Venezuelan airspace. This decision affects flights scheduled for the coming days, with some airlines specifically canceling flights through Caracas. The U.S. has also increased its military presence near Venezuela, deploying fighter jets, additional troops, and naval vessels, including the aircraft carrier USS Gerald R. Ford, in the Caribbean Sea. This military buildup is seen as a demonstration of power and a potential threat to the government of Venezuelan President Nicolas Maduro. The situation has led to a significant reduction in air traffic over Venezuela, as airlines reroute flights to avoid the country's airspace.
+
+**Key Developments Today:**
+- The FAA issued a warning about security risks and military activity in Venezuelan airspace.
+- Six international airlines, including TAP Air Portugal and Iberia, have canceled flights to Venezuela.
+- The U.S. has increased its military presence near Venezuela, deploying additional forces and naval assets.
+- The aircraft carrier USS Gerald R. Ford is positioned in the Caribbean Sea as part of the U.S. military buildup.
+- Air traffic over Venezuela has significantly decreased as airlines reroute flights to avoid the region.

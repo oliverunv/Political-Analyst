@@ -13,25 +13,35 @@ LOCAL_OFFSET_HOURS = -5  # adjust seasonally if needed
 LOCAL_TZ = timezone(timedelta(hours=LOCAL_OFFSET_HOURS))
 
 # -----------------------------------------------------
+# Helper: calculate which date should be reported today
+# -----------------------------------------------------
+def determine_report_date(now=None):
+    """Return the date whose 24h window just closed.
+
+    The window ends at 08:00 local time. Before 08:00 the report covers
+    the previous day; after 08:00 it covers the current local day.
+    """
+
+    now_utc = now or datetime.now(timezone.utc)
+    now_local = now_utc.astimezone(LOCAL_TZ)
+    local_today = now_local.date()
+
+    if now_local.hour < 8:
+        return local_today - timedelta(days=1)
+    return local_today
+
+
+# -----------------------------------------------------
 # 1️⃣ FETCH: get articles for the last completed 24h window
 #     Window ends at 08:00 local on report_date
 # -----------------------------------------------------
-def fetch_articles():
+def fetch_articles(report_date=None):
     print("⏳ Fetching daily news (via GNews)...")
     BASE = "https://gnews.io/api/v4/search"
     results = []
 
-    # --- Determine report_date based on local time ---
-    now_utc = datetime.now(timezone.utc)
-    now_local = now_utc.astimezone(LOCAL_TZ)
-    local_today = now_local.date()
-
-    # If before 08:00 → close previous day's window
-    # If after 08:00 → close today's window
-    if now_local.hour < 8:
-        report_date = local_today - timedelta(days=1)
-    else:
-        report_date = local_today
+    # Determine which date to generate a report for (default: today's window)
+    report_date = report_date or determine_report_date()
 
     # End of window: 08:00 local on report_date
     end_local = datetime(
@@ -52,7 +62,9 @@ def fetch_articles():
     from_date = start_time.isoformat().replace("+00:00", "Z")
     to_date = end_time.isoformat().replace("+00:00", "Z")
 
-    print(f"📆 Local now: {now_local} (today={local_today})")
+    # Log for visibility when backfilling multiple days
+    now_local = datetime.now(timezone.utc).astimezone(LOCAL_TZ)
+    print(f"📆 Local now: {now_local}")
     print(f"🗓️ Report date: {report_date}")
     print(f"🕒 Time window (UTC): {from_date} → {to_date}")
 
@@ -162,27 +174,72 @@ Articles:
 
 
 # -----------------------------------------------------
+# Helper: find the most recent already-generated report
+# -----------------------------------------------------
+def latest_report_date(daily_dir="outputs/daily"):
+    """Return the latest report date found in the outputs directory."""
+
+    if not os.path.isdir(daily_dir):
+        return None
+
+    latest = None
+    for fname in os.listdir(daily_dir):
+        if not fname.startswith("venezuela_") or not fname.endswith(".md"):
+            continue
+
+        date_part = fname[len("venezuela_") : -3]
+        try:
+            current = datetime.fromisoformat(date_part).date()
+        except ValueError:
+            continue
+
+        if (latest is None) or (current > latest):
+            latest = current
+
+    return latest
+
+
+# -----------------------------------------------------
 # 4️⃣ MAIN PIPELINE
 # -----------------------------------------------------
 if __name__ == "__main__":
-    articles, report_date = fetch_articles()
-
-    if not articles:
-        print(f"⚠️ No articles found for {report_date}, aborting.")
-        raise SystemExit(0)
-
-    curated = clean_rank(articles)
-    if not curated:
-        print(f"⚠️ No curated Venezuela articles for {report_date}, aborting.")
-        raise SystemExit(0)
-
-    summary = summarize(curated)
-
     os.makedirs("outputs/daily", exist_ok=True)
-    out_path = f"outputs/daily/venezuela_{report_date}.md"
-    with open(out_path, "w", encoding="utf-8") as f:
-        f.write(summary)
 
-    print(f"\n✅ Daily summary saved → {out_path}")
-    print("\n--- Preview ---\n")
-    print(summary[:800])
+    # 1) Identify the most recent saved report (if any)
+    last_saved = latest_report_date()
+
+    # 2) Determine which report date we are expected to generate today
+    expected_report = determine_report_date()
+
+    # 3) If there is a gap, backfill each missing date in order
+    if last_saved is None:
+        next_date = expected_report
+    else:
+        next_date = last_saved + timedelta(days=1)
+
+    # 4) Iterate from the first missing date through the expected date
+    current = next_date
+    while current <= expected_report:
+        print(f"\n🚀 Generating report for {current}...")
+        articles, report_date = fetch_articles(report_date=current)
+
+        if not articles:
+            print(f"⚠️ No articles found for {report_date}, aborting.")
+            raise SystemExit(0)
+
+        curated = clean_rank(articles)
+        if not curated:
+            print(f"⚠️ No curated Venezuela articles for {report_date}, aborting.")
+            raise SystemExit(0)
+
+        summary = summarize(curated)
+
+        out_path = f"outputs/daily/venezuela_{report_date}.md"
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(summary)
+
+        print(f"\n✅ Daily summary saved → {out_path}")
+        print("\n--- Preview ---\n")
+        print(summary[:800])
+
+        current += timedelta(days=1)

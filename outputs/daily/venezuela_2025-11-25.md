@@ -1,0 +1,8 @@
+Venezuelan President Nicolas Maduro is reportedly considering using the country's crude oil exports as leverage in potential negotiations with the United States. This comes amid heightened tensions between the two nations, with the U.S. recently designating Venezuela's Cartel de los Soles as a terrorist organization. Currently, most of Venezuela's oil is exported to China, but there is potential for changes in PDVSA's supply contracts that could redirect shipments to the U.S. and Europe. Meanwhile, tensions have led to disruptions in air travel, with airlines halting flights to and from Venezuela, leaving many travelers stranded. In a related development, Israel has accused Venezuela of being an operational link for groups such as Hizbulá, Hamás, and the Houthi rebels in South America. Additionally, U.S. military presence near Venezuela has increased, with reports of B-52 bombers flying off the coast, adding to the geopolitical strain.
+
+**Key Developments Today:**
+- Maduro may use Venezuela's oil exports as leverage in potential U.S. negotiations.
+- U.S. designates Venezuela's Cartel de los Soles as a terrorist organization.
+- Airlines halt flights to and from Venezuela amid security concerns, stranding travelers.
+- Israel accuses Venezuela of being a link for Islamist groups in South America.
+- U.S. military presence near Venezuela increases with B-52 bombers reported off the coast.

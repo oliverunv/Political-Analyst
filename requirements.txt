@@ -3,5 +3,6 @@ requests==2.32.3
 pytz==2024.1
 tqdm==4.66.5
 openai>=1.40.0
-streamlit==1.39.0      
-langcodes==3.4.0       
+streamlit==1.39.0
+langcodes==3.4.0
+pytest==8.4.2

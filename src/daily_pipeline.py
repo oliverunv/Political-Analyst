@@ -18,22 +18,39 @@ LOCAL_TZ = timezone(timedelta(hours=LOCAL_OFFSET_HOURS))
 def determine_report_date(now=None):
     """Return the date whose 24h window just closed.
 
-    The window ends at 08:00 local time. Before 08:00 the report covers
-    the previous day; after 08:00 it covers the current local day.
+    The pipeline should *always* generate the report for the previous
+    local day, regardless of the current local time. This keeps behavior
+    consistent even when running after the daily cutoff.
     """
 
     now_utc = now or datetime.now(timezone.utc)
     now_local = now_utc.astimezone(LOCAL_TZ)
-    local_today = now_local.date()
+    return now_local.date() - timedelta(days=1)
 
-    if now_local.hour < 8:
-        return local_today - timedelta(days=1)
-    return local_today
+
+def time_window_for_date(report_date):
+    """Return the 24h local window for the given date.
+
+    The window spans the full calendar day in the configured local
+    timezone: from 00:00 at the start of ``report_date`` through
+    00:00 of the following day.
+    """
+
+    start_local = datetime(
+        year=report_date.year,
+        month=report_date.month,
+        day=report_date.day,
+        hour=0,
+        minute=0,
+        second=0,
+        tzinfo=LOCAL_TZ,
+    )
+    end_local = start_local + timedelta(days=1)
+    return start_local, end_local
 
 
 # -----------------------------------------------------
 # 1️⃣ FETCH: get articles for the last completed 24h window
-#     Window ends at 08:00 local on report_date
 # -----------------------------------------------------
 def fetch_articles(report_date=None):
     print("⏳ Fetching daily news (via GNews)...")
@@ -43,17 +60,8 @@ def fetch_articles(report_date=None):
     # Determine which date to generate a report for (default: today's window)
     report_date = report_date or determine_report_date()
 
-    # End of window: 08:00 local on report_date
-    end_local = datetime(
-        year=report_date.year,
-        month=report_date.month,
-        day=report_date.day,
-        hour=8,
-        minute=0,
-        second=0,
-        tzinfo=LOCAL_TZ,
-    )
-    start_local = end_local - timedelta(days=1)
+    # Use the full 24h local calendar day window
+    start_local, end_local = time_window_for_date(report_date)
 
     # Convert to UTC for API
     start_time = start_local.astimezone(timezone.utc)

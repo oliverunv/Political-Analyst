@@ -61,7 +61,22 @@ def test_determine_report_date_allows_override():
     assert daily_pipeline.determine_report_date(now) == now.date() - daily_pipeline.timedelta(days=1)
 
     now = daily_pipeline.datetime(2024, 5, 1, 14, 0, tzinfo=daily_pipeline.timezone.utc)
-    assert daily_pipeline.determine_report_date(now) == now.date()
+    assert daily_pipeline.determine_report_date(now) == now.date() - daily_pipeline.timedelta(days=1)
+
+
+def test_time_window_for_date_spans_full_day():
+    """The window helper should cover the full local calendar day."""
+
+    from src import daily_pipeline
+
+    report_date = daily_pipeline.datetime(2024, 5, 10).date()
+    start_local, end_local = daily_pipeline.time_window_for_date(report_date)
+
+    assert start_local.hour == 0 and start_local.minute == 0
+    assert end_local - start_local == daily_pipeline.timedelta(days=1)
+    assert start_local.date() == report_date
+    # End should roll into the next local day
+    assert end_local.date() == report_date + daily_pipeline.timedelta(days=1)
 
 
 def test_latest_report_date_detects_most_recent(tmp_path):

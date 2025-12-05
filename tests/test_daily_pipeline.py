@@ -51,3 +51,28 @@ def test_build_context_respects_character_cap():
 
     assert "One" in context_text
     assert "Two" not in context_text
+
+
+def test_determine_report_date_allows_override():
+    """Report date helper should be reproducible with a supplied time."""
+
+    from src import daily_pipeline
+    now = daily_pipeline.datetime(2024, 5, 1, 7, 0, tzinfo=daily_pipeline.timezone.utc)
+    assert daily_pipeline.determine_report_date(now) == now.date() - daily_pipeline.timedelta(days=1)
+
+    now = daily_pipeline.datetime(2024, 5, 1, 14, 0, tzinfo=daily_pipeline.timezone.utc)
+    assert daily_pipeline.determine_report_date(now) == now.date()
+
+
+def test_latest_report_date_detects_most_recent(tmp_path):
+    """Helper should parse the latest ISO date from report filenames."""
+
+    from src import daily_pipeline
+
+    daily_dir = tmp_path / "outputs" / "daily"
+    daily_dir.mkdir(parents=True)
+    (daily_dir / "venezuela_2024-05-01.md").write_text("one", encoding="utf-8")
+    (daily_dir / "venezuela_2024-05-03.md").write_text("two", encoding="utf-8")
+    (daily_dir / "ignored.txt").write_text("skip", encoding="utf-8")
+
+    assert daily_pipeline.latest_report_date(str(daily_dir)) == daily_pipeline.datetime(2024, 5, 3).date()
